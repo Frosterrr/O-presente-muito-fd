@@ -1,0 +1,58 @@
+<!doctype html><html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Surpresa para Gaby 🕷️</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden}body{font-family:Arial;background:#050507;color:#fff}
+#entry,.stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;background:radial-gradient(circle at 80% 15%,#551044,#09070d 55%,#020203)}
+.card{width:min(700px,100%);max-height:92vh;overflow:auto;padding:28px 22px;text-align:center;border:1px solid #ffffff25;border-radius:28px;background:#0d0b12ed;box-shadow:0 20px 70px #000}
+h1{font-size:clamp(32px,9vw,58px);color:#ff4d9d}h2{color:#e65cff;font-size:clamp(25px,7vw,40px)}
+p,.quote{font-size:18px;line-height:1.65}.quote{text-align:left;padding:18px;margin:15px 0;border-left:3px solid #ff3d8e;background:#ffffff08;border-radius:12px}
+input{width:100%;padding:15px;border-radius:15px;border:1px solid #ffffff25;background:#060609;color:white;font-size:17px}
+button{border:0;border-radius:18px;padding:15px 23px;margin-top:18px;background:linear-gradient(135deg,#ef176f,#8c35ff);color:#fff;font-weight:bold;font-size:16px}
+.hidden{display:none!important}.stage{display:none}.stage.active{display:flex;animation:a .35s ease}.error{color:#ff6ba8;min-height:25px}.web{font-size:50px}.progress{position:fixed;top:10px;left:50%;transform:translateX(-50%);z-index:5;color:#fff8}
+.photo{height:52vh;min-height:260px;border:2px dashed #ffffff35;border-radius:24px;display:flex;align-items:center;justify-content:center;background:#17101f;color:#fff9;font-size:21px}
+@keyframes a{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
+</style></head><body>
+
+<div id="entry"><div class="card"><div class="web">🕷️</div><h1>Uma surpresa só para você... ❤️</h1>
+<p>Digite a chave para entrar</p><p>💡 É algo que eu amo muito.</p>
+<input id="pass" placeholder="Digite a senha"><button onclick="unlock()">DESBLOQUEAR ❤️</button><div id="err" class="error"></div></div></div>
+
+<div id="app" class="hidden"><div id="prog" class="progress"></div>
+
+<section class="stage active"><div class="card"><div class="web">🕷️</div><h2>Agora começa...</h2><p>Uma surpresa feita especialmente pra você, Gaby. ❤️</p><button onclick="go(1)">COMEÇAR 🕷️</button></div></section>
+
+<section class="stage"><div class="card"><h2>🇪🇸 Primeira frase</h2><div class="quote">Gabrielly es simplemente un nombre completo; representa todo lo que necesito: una mujer perfecta, maravillosa, sexy y hermosa, entre muchos otros halagos.</div><button onclick="go(2)">PRÓXIMA 🕷️</button></div></section>
+<section class="stage"><div class="card"><h2>🇪🇸 Segunda frase</h2><div class="quote">Si la belleza fuera arte, tú serías la obra maestra más perfecta que el mundo haya visto jamás.</div><button onclick="go(3)">PRÓXIMA 🕷️</button></div></section>
+
+<section class="stage"><div class="card"><h2>😏 Cantada 1</h2><div class="quote">Como pode né, eu n ter conhecido uma mulher tão gata como vc só nesse ano, slk vc demorou pra chegar na minha vida.</div><button onclick="go(4)">PRÓXIMA 🕷️</button></div></section>
+<section class="stage"><div class="card"><h2>😏 Cantada 2</h2><div class="quote">Gabrielly es simplemente un nombre completo; representa todo lo que necesito: una mujer perfecta, maravillosa, sexy y hermosa, entre muchos otros halagos.</div><button onclick="go(5)">PRÓXIMA 🕷️</button></div></section>
+<section class="stage"><div class="card"><h2>😏 Cantada 3</h2><div class="quote">Seu amor me ensinou que a vida é uma escola: em História imagino nosso futuro, em Geografia seu abraço é meu mapa, em Física e Química nossa atração é perfeita, e em Matemática a nossa conta sempre dá um amor infinito.</div><button onclick="go(6)">PRÓXIMA 🕷️</button></div></section>
+<section class="stage"><div class="card"><h2>😏 Cantada 4</h2><div class="quote">Si la belleza fuera arte, tú serías la obra maestra más perfecta que el mundo haya visto jamás.</div><button onclick="go(7)">IR PARA AS FOTOS 📸</button></div></section>
+
+<section class="stage"><div class="card"><h2>📸 Foto 1</h2><div class="photo">FOTO 1<br>Adicionar depois</div><button onclick="go(8)">PRÓXIMA 📸</button></div></section>
+<section class="stage"><div class="card"><h2>📸 Foto 2</h2><div class="photo">FOTO 2<br>Adicionar depois</div><button onclick="go(9)">PRÓXIMA 📸</button></div></section>
+<section class="stage"><div class="card"><h2>📸 Foto 3</h2><div class="photo">FOTO 3<br>Adicionar depois</div><button onclick="go(10)">PRÓXIMA 📸</button></div></section>
+<section class="stage"><div class="card"><h2>📸 Foto 4</h2><div class="photo">FOTO 4<br>Adicionar depois</div><button onclick="go(11)">PRÓXIMA 📸</button></div></section>
+<section class="stage"><div class="card"><h2>📸 Foto 5</h2><div class="photo">FOTO 5<br>Adicionar depois</div><button onclick="go(12)">PRÓXIMA 📸</button></div></section>
+<section class="stage"><div class="card"><h2>📸 Foto 6</h2><div class="photo">FOTO 6<br>Adicionar depois</div><button onclick="go(13)">PRÓXIMA ❤️</button></div></section>
+
+<section class="stage"><div class="card"><h2>❤️ Bommmm aii vamos nós denoooo:</h2><p>Como posso começar, fiz dessa vez o site pq tava com o plano completo. Se vc recebeu o site é pq recebeu as cartas e espero q goste, sou um pobre fudido mais tento dar meu máximo para vc percebe q sou merecedor de uma deusa como você.</p><button onclick="go(14)">CONTINUAR</button></div></section>
+<section class="stage"><div class="card"><p>É sei q eu sou muito dramático, chorão e me magoou muito fácil, mais é q eu realmente me chateoo com coisas simples, e n quero perde vc pq eu ti amu mto e tenho medo de te perder e muitoooo, ainda mais ano q vem né q vou pra outra escola e n ter mais a minha namorada todos os dias.</p><button onclick="go(15)">CONTINUAR</button></div></section>
+<section class="stage"><div class="card"><p>Agr a parte q vc provável que vá gosta né, ent Gaby sei q sou um mrd nessas coisas, mais quero que vc saiba q eu ti amu mto independente do q vc faça eu sempre te amarei pq vc é a mulher dos meus sonhos, vc tem tudo que eu preciso tudooooo.</p><button onclick="go(16)">CONTINUAR</button></div></section>
+<section class="stage"><div class="card"><p>E só tenho até hj a agradecer por vc aparece na minha vida, foi bem aleatório mais o importante é q hj namoro uma menina incrível doida da cabeça mais incrível. E bom é isso que tenho pra dizer q eu ti amu muito independente de tudo que aconteça e q isso n vai acabar se depende de mim pq afinal de contas tú és mi mulher e sempre será.</p><button onclick="go(17)">CONTINUAR</button></div></section>
+<section class="stage"><div class="card"><p>Ent pra finalizar tiii amuuuuuuu muitooooo mozinhuuuu</p><button onclick="go(18)">MENSAGEM SECRETA 🔐</button></div></section>
+
+<section class="stage"><div class="card"><h2>🔐 Mensagem secreta</h2><input id="secret" placeholder="Senha: Ti amu"><button onclick="secret()">DESBLOQUEAR</button><p id="se"></p><div id="reveal" class="hidden"><div class="quote">Acerto a senha meu amor tá espertinha hein, isso aqui é só pra vc saber q eu NUNCA NUNCA na minha vida vou te troca, e n pode falta né vindo do seu safadinho, tu tem mó rabao ent pq eu iria te trocar né sem conta do seu peito ent sua doida n se preocupa de traição vindo de mim pq só vc tem o rabao q eu sou apaixonado e os peitos q eu amo aperta</div><button onclick="go(19)">A PROMESSA ❤️</button></div></div></section>
+
+<section class="stage"><div class="card"><h2>Uma promessa pra você... 🌙</h2><p>Gabrielly você aceita ser minha namorada não só por hj mais para sempre, e futuramente você se tornar a minha esposa e mãe dos meus filhos, e n pode falta isso é uma promessa eae você promete para o seu neném???</p><button onclick="go(20)">EU PROMETO ❤️</button></div></section>
+<section class="stage"><div class="card"><div class="web">🕷️</div><h1>❤️</h1><p>Bom esse é o final ent tii amuuu espero que vc tenha gostado do presente q fiz pra vc.</p><p>Mais dps de vc ver já me fala né, minha gsts vc gostou do presente?</p><button onclick="document.getElementById('fim').textContent='AAAAA EU SABIA KKKKK ❤️🕷️'">EU GOSTEI ❤️</button><p id="fim"></p></div></section>
+</div>
+
+<script>
+const s=[...document.querySelectorAll(".stage")];let n=0;
+function norm(x){return x.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]/g,"")}
+function unlock(){let x=norm(document.getElementById("pass").value);if(["meurabao","meuspeitos","voce","tiamu","gaby","minhabb","minhanenem"].includes(x)){entry.classList.add("hidden");app.classList.remove("hidden");go(0)}else err.textContent="Mds amor 😭 é ALGO QUE EU AMO MUITO!!"}
+function go(i){s[n].classList.remove("active");n=i;s[n].classList.add("active");prog.textContent=(n+1)+" / "+s.length}
+function secret(){if(norm(document.getElementById("secret").value)==="tiamu"){se.textContent="";reveal.classList.remove("hidden")}else se.textContent="Errou 😭 tenta de novo."}
+</script></body></html>
