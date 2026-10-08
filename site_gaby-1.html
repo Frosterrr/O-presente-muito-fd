@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Gaby ❤️</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;
+  background:radial-gradient(circle at top,#35145b 0,#140b24 42%,#07070c 100%);
+  color:#fff;overflow-x:hidden;
+}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;
+background-image:radial-gradient(#fff 1px,transparent 1px);background-size:55px 55px;opacity:.12}
+.hidden{display:none!important}
+.screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:25px}
+.card{
+ max-width:720px;width:100%;padding:30px 22px;border:1px solid #ffffff25;
+ border-radius:28px;background:#120d1dcc;backdrop-filter:blur(12px);
+ box-shadow:0 20px 80px #0008;text-align:center
+}
+h1,h2{margin:0 0 14px}
+h1{font-size:clamp(2rem,8vw,4rem)}
+h2{font-size:clamp(1.6rem,6vw,2.7rem)}
+p{line-height:1.7}
+.paw{font-size:2rem}
+.subtitle{opacity:.8}
+input{
+ width:100%;padding:16px;border-radius:15px;border:1px solid #ffffff35;
+ background:#09070e;color:white;font-size:1rem;outline:none;margin:14px 0
+}
+button{
+ border:0;border-radius:16px;padding:14px 20px;font-weight:800;
+ background:linear-gradient(135deg,#ff4fa3,#9c4dff);color:#fff;cursor:pointer;
+ box-shadow:0 8px 25px #0005
+}
+button:active{transform:scale(.97)}
+.error{color:#ff8dc6;min-height:28px;font-weight:700}
+section{max-width:900px;margin:auto;padding:90px 20px}
+.section-card{
+ background:#100c19dd;border:1px solid #ffffff18;border-radius:28px;padding:25px;
+ box-shadow:0 20px 70px #0006
+}
+.nav{position:fixed;right:14px;bottom:14px;z-index:10;display:flex;gap:8px}
+.nav button{padding:10px 13px;font-size:1.1rem}
+.quote{font-size:1.08rem;margin:18px 0;padding:18px;border-left:3px solid #ff55a9;background:#ffffff08;border-radius:12px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.photo{
+ min-height:170px;border-radius:20px;border:1px dashed #ffffff35;
+ display:flex;align-items:center;justify-content:center;text-align:center;
+ background:linear-gradient(135deg,#26123e,#11111b);color:#ffffff9c
+}
+.note{font-size:.9rem;color:#ffffffa8}
+.reveal{animation:rise .8s both}
+@keyframes rise{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
+.float{position:fixed;pointer-events:none;animation:float 5s linear forwards;z-index:20}
+@keyframes float{to{transform:translateY(-110vh) rotate(30deg);opacity:0}}
+.divider{text-align:center;font-size:2rem;margin:25px 0}
+.secret-box{text-align:center}
+.big{font-size:1.3rem}
+.final{text-align:center}
+.promise{font-size:1.15rem}
+</style>
+</head>
+<body>
+
+<div id="entry" class="screen">
+  <div class="card reveal">
+    <div class="paw">🐱 ❤️ 🐾</div>
+    <h1>Uma surpresa só para você... ❤️</h1>
+    <p class="subtitle">Digite a chave para entrar</p>
+    <p>💡 Dica: <b>É algo que eu amo muito.</b></p>
+    <input id="password" placeholder="Digite a senha..." autocomplete="off">
+    <button onclick="unlock()">DESBLOQUEAR ❤️</button>
+    <div id="error" class="error"></div>
+  </div>
+</div>
+
+<main id="site" class="hidden">
+
+<section>
+ <div class="section-card reveal">
+  <div class="divider">🐱 💗 🐾 💜 🐾 💗 🐱</div>
+  <h2>Agora que você descobriu a chave...</h2>
+  <p class="big">vem comigo. ❤️🐾</p>
+ </div>
+</section>
+
+<section id="espanhol">
+ <div class="section-card reveal">
+  <h2>🇪🇸 Un poquito de español 😈</h2>
+  <p>Porque é claro que eu tinha que dificultar sua vida um pouquinho KKKKK.</p>
+  <div class="quote">“Si la belleza fuera arte, tú serías la obra maestra más perfecta que el mundo haya visto jamás.”</div>
+  <div class="quote">“Gabrielly es simplemente un nombre completo; representa todo lo que necesito: una mujer perfecta, maravillosa, sexy y hermosa, entre muchos otros halagos.”</div>
+ </div>
+</section>
+
+<section id="cantadas">
+ <div class="section-card">
+  <h2>😏 Cantadas</h2>
+  <div class="quote">“Como pode né, eu n ter conhecido uma mulher tão gata como vc só nesse ano, slk vc demorou pra chegar na minha vida.”</div>
+  <div class="quote">“Gabrielly es simplemente un nombre completo; representa todo lo que necesito: una mujer perfecta, maravillosa, sexy y hermosa, entre muchos otros halagos.”</div>
+  <div class="quote">“Seu amor me ensinou que a vida é uma escola: em História imagino nosso futuro, em Geografia seu abraço é meu mapa, em Física e Química nossa atração é perfeita, e em Matemática a nossa conta sempre dá um amor infinito.”</div>
+  <div class="quote">“Si la belleza fuera arte, tú serías la obra maestra más perfecta que el mundo haya visto jamás.”</div>
+ </div>
+</section>
+
+<section id="fotos">
+ <div class="section-card">
+  <h2>📸 Umas fotinhas dela ❤️</h2>
+  <p class="note">Coloque suas 6 fotos nos espaços abaixo quando publicar o site.</p>
+  <div class="gallery">
+   <div class="photo">FOTO 1 📷</div><div class="photo">FOTO 2 📷</div>
+   <div class="photo">FOTO 3 📷</div><div class="photo">FOTO 4 📷</div>
+   <div class="photo">FOTO 5 📷</div><div class="photo">FOTO 6 📷</div>
+  </div>
+ </div>
+</section>
+
+<section id="texto">
+ <div class="section-card">
+  <h2>💌 Uma coisa que eu queria te dizer...</h2>
+  <div class="quote">
+   Bommmm aii vamos nós denoooo:<br><br>
+   Como posso começar, fiz dessa vez o site pq tava com o plano completo. Se vc recebeu o site é pq recebeu as cartas e espero q goste, sou um pobre fudido mais tento dar meu máximo para vc percebe q sou merecedor de uma deusa como você.<br><br>
+   É sei q eu sou muito dramático, chorão e me magoou muito fácil, mais é q eu realmente me chateoo com coisas simples, e n quero perde vc pq eu ti amu mto e tenho medo de te perder e muitoooo, ainda mais ano q vem né q vou pra outra escola e n ter mais a minha namorada todos os dias.<br><br>
+   Agr a parte q vc provável que vá gosta né, ent Gaby sei q sou um mrd nessas coisas, mais quero que vc saiba q eu ti amu mto independente do q vc faça eu sempre te amarei pq vc é a mulher dos meus sonhos, vc tem tudo que eu preciso tudooooo. E só tenho até hj a agradecer por vc aparece na minha vida, foi bem aleatório mais o importante é q hj namoro uma menina incrível doida da cabeça mais incrível.<br><br>
+   E bom é isso que tenho pra dizer q eu ti amu muito independente de tudo que aconteça e q isso n vai acabar se depende de mim pq afinal de contas tú és mi mulher e sempre será.<br><br>
+   Ent pra finalizar tiii amuuuuuuu muitooooo mozinhuuuu ❤️
+  </div>
+ </div>
+</section>
+
+<section id="secreta">
+ <div class="section-card secret-box">
+  <h2>🔐 Mensagem secreta</h2>
+  <p>Você sabe a senha... 👀</p>
+  <input id="secretPass" placeholder="Digite aqui..." autocomplete="off">
+  <button onclick="secretUnlock()">DESBLOQUEAR 💗</button>
+  <div id="secretError" class="error"></div>
+  <div id="secretMsg" class="quote hidden">
+   Acerto a senha meu amor tá espertinha hein, isso aqui é só pra vc saber q eu NUNCA NUNCA na minha vida vou te troca, e n pode falta né vindo do seu safadinho, tu tem mó rabao ent pq eu iria te trocar né sem conta do seu peito ent sua doida n se preocupa de traição vindo de mim pq só vc tem o rabao q eu sou apaixonado e os peitos q eu amo aperta ❤️
+  </div>
+ </div>
+</section>
+
+<section id="promessa">
+ <div class="section-card">
+  <div class="divider">🌙 ✨ 🐱 ✨ 🌙</div>
+  <h2>Uma promessa pra você...</h2>
+  <p class="promise">
+   Gabrielly você aceita ser minha namorada não só por hj mais para sempre, e futuramente você se tornar a minha esposa e mãe dos meus filhos, e n pode falta isso é uma promessa eae você promete para o seu neném??? ❤️
+  </p>
+ </div>
+</section>
+
+<section id="final">
+ <div class="section-card final">
+  <h2>🎁 Bom... esse é o final.</h2>
+  <p>ent tii amuuu espero que vc tenha gostado do presente q fiz pra vc.</p>
+  <p>Mais dps de vc ver já me fala né, minha gsts vc gostou do presente? ❤️</p>
+  <button onclick="celebrate()">EU GOSTEI ❤️</button>
+ </div>
+</section>
+
+</main>
+
+<div id="nav" class="nav hidden">
+ <button onclick="location.href='#espanhol'">🇪🇸</button>
+ <button onclick="location.href='#cantadas'">😏</button>
+ <button onclick="location.href='#fotos'">📸</button>
+ <button onclick="location.href='#texto'">💌</button>
+ <button onclick="location.href='#secreta'">🔐</button>
+</div>
+
+<script>
+const validPasswords=["meu rabao","meus peitos","você","voce","ti amu","gaby","minha bb","minha neném","minha nenem"];
+
+function normalize(s){
+ return s.toLowerCase().trim().normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+   .replace(/[^a-z0-9]/g,"");
+}
+function flexibleTiAmu(s){
+ let x=normalize(s);
+ return /^ti+a+mu+$/.test(x) || (x.includes("ti") && x.includes("amu") && x.length<=30);
+}
+function isValidMain(s){
+ let n=normalize(s);
+ return validPasswords.some(p=>normalize(p)===n) || flexibleTiAmu(s);
+}
+function unlock(){
+ const input=document.getElementById("password"), err=document.getElementById("error");
+ if(isValidMain(input.value)){
+   document.getElementById("entry").classList.add("hidden");
+   document.getElementById("site").classList.remove("hidden");
+   document.getElementById("nav").classList.remove("hidden");
+   window.scrollTo(0,0);
+   burst();
+ }else{
+   err.textContent="Mds amor 😭 é ALGO QUE EU AMO MUITO!!";
+ }
+}
+function secretUnlock(){
+ const input=document.getElementById("secretPass"), err=document.getElementById("secretError");
+ if(flexibleTiAmu(input.value)){
+   document.getElementById("secretMsg").classList.remove("hidden");
+   err.textContent="";
+   burst();
+ }else err.textContent="Amor... pensa um pouquinho 😭❤️";
+}
+function burst(){
+ for(let i=0;i<18;i++){
+  setTimeout(()=>{
+   const e=document.createElement("div");e.className="float";
+   e.textContent=["❤️","💗","💜","🐾","✨"][Math.floor(Math.random()*5)];
+   e.style.left=Math.random()*100+"vw";e.style.bottom="-30px";
+   e.style.fontSize=(18+Math.random()*25)+"px";
+   document.body.appendChild(e);setTimeout(()=>e.remove(),5000);
+  },i*90);
+ }
+}
+function celebrate(){
+ burst();burst();
+ setTimeout(()=>alert("Eu sabia que você ia gostar KKKKK ❤️🐾"),300);
+}
+document.getElementById("password").addEventListener("keydown",e=>{if(e.key==="Enter")unlock()});
+document.getElementById("secretPass").addEventListener("keydown",e=>{if(e.key==="Enter")secretUnlock()});
+</script>
+</body>
+</html>
